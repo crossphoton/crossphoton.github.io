@@ -25,43 +25,67 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body>
-    <h1>Aditya Agrawal</h1>
-    <img id="image" src="./pic.jpeg" alt="Aditya Agrawal" />
-    <div class="links">
-      <a
-        href="http://www.linkedin.com/in/crossphoton"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><i id="linkedin" class="fab fa-linkedin-in"></i
-      ></a>
-      <a
-        href="http://www.github.com/crossphoton"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><i id="linkedin" class="fab fa-github"></i
-      ></a>
-      <a
-        href="http://www.instagram.com/crossphoton"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><i id="linkedin" class="fab fa-instagram"></i
-      ></a>
-      <a
-        href="mailto:aditya@crossphoton.tech"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><i id="email" class="fa fa-envelope"></i
-      ></a>
-      <a
-        href="https://twitter.com/tweetsofaditya"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><i id="twitter" class="fab fa-twitter"></i
-      ></a>
-      <a href="/cdn/CV.pdf" target="_blank" rel="noopener noreferrer"
-        ><i id="resume" class="fa fa-file-text"></i
-      ></a>
+  <body style="color: white; background-color: black">
+    <div id="top-bar">
+      <div class="top-links left-side">
+        <a href="https://travel.crossphoton.tech" rel="noopener noreferrer">
+          <h2>Travel Blog</h2></a
+        >
+        <a disabled href="" rel="noopener noreferrer" style="color: grey">
+          <h2>Blog</h2></a
+        >
+      </div>
+      <div class="right-side">
+        <i id="theme-button" class="fa fa-lightbulb"></i>
+      </div>
     </div>
+    <main>
+      <h1>Aditya Agrawal</h1>
+      <img id="image" src="./pic.jpeg" alt="Aditya Agrawal" />
+      <div class="links">
+        <a
+          href="http://www.linkedin.com/in/crossphoton"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i id="linkedin" class="fab fa-linkedin-in"></i
+        ></a>
+        <a
+          href="http://www.github.com/crossphoton"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i id="linkedin" class="fab fa-github"></i
+        ></a>
+        <a
+          href="http://www.instagram.com/crossphoton"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i id="linkedin" class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="mailto:aditya@crossphoton.tech"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i id="email" class="fa fa-envelope"></i
+        ></a>
+        <a
+          href="https://twitter.com/tweetsofaditya"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i id="twitter" class="fab fa-twitter"></i
+        ></a>
+        <a href="/cdn/CV.pdf" target="_blank" rel="noopener noreferrer"
+          ><i id="resume" class="fa fa-file-text"></i
+        ></a>
+      </div>
+    </main>
   </body>
+  <script>
+    const themeButton = document.getElementById("theme-button");
+    themeButton.addEventListener("click", (e) => {
+      var bodyStyle = document.getElementsByTagName("body")[0].style;
+      bodyStyle.color = bodyStyle.color == "black" ? "white" : "black";
+      bodyStyle.backgroundColor =
+        bodyStyle.backgroundColor == "black" ? "white" : "black";
+    });
+  </script>
 </html>

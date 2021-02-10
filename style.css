@@ -5,19 +5,23 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
 }
 
-body * {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main * {
   margin: 20px;
   font-size: 50px;
-  color: black;
   text-align: center;
 }
 
@@ -29,4 +33,29 @@ body * {
 
 .links {
   max-width: 700px;
+}
+
+#top-bar * {
+  display: flex;
+  margin: 10px;
+}
+
+#top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa,
+.fab {
+  transition: all ease-in-out 0.3s;
+}
+
+.fa:hover,
+.fab:hover {
+  transform: scale(1.4);
+}
+
+#theme-button {
+  font-size: 50px;
+  cursor: pointer;
 }
