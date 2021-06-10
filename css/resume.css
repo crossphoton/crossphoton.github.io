@@ -48,7 +48,7 @@ h2 {
 }
 
 .list-social-icons a:hover {
-  color: #bd5d38;
+  color: #3038a3;
 }
 
 .list-social-icons a .fa-lg {
@@ -60,7 +60,7 @@ h2 {
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #bd5d38;
+  color: #3038a3;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -149,7 +149,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #824027;
+  color: #000672;
 }
 
 img {
