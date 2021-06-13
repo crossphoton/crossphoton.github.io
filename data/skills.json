@@ -1,0 +1,40 @@
+[
+  {
+    "grouping": "Languages, Operating Systems & Tools",
+    "skills": ["javascript", "go", "c++", "git", "linux", "windows", "bash"]
+  },
+  {
+    "grouping": "Frameworks",
+    "skills": [{ "name": "express", "icon": "javascript" }, "react"]
+  },
+  {
+    "grouping": "Databases",
+    "skills": [
+      "MongoDB",
+      "Redis",
+      { "name": "Postgres", "icon": "postgresql" },
+      { "name": "Firestore", "icon": "firebase" }
+    ]
+  },
+  {
+    "grouping": "Containers & Cloud",
+    "skills": [
+      { "name": "Docker", "link": "https://docker.com" },
+      {
+        "name": "Google Cloud Platform",
+        "link": "https://cloud.google.com",
+        "icon": "google-cloud-platform"
+      },
+      {
+        "name": "Digital Ocean",
+        "link": "https://www.digitalocean.com/",
+        "icon": "digital-ocean"
+      },
+      {
+        "name": "Heroku",
+        "link": "https://www.heroku.com/",
+        "icon": "heroku"
+      }
+    ]
+  }
+]

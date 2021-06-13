@@ -1,75 +1,55 @@
-baseURL = "https://crossphoton.tech"
-languageCode = "en"
-DefaultContentLanguage = "en"
 title = "Aditya Agrawal"
-theme = "anatole"
-summarylength = 10
-enableEmoji = true
-enableRobotsTXT = true
+baseURL = "https://crossphoton.tech"
+theme = "hugo-resume"
+languageCode = "en-us"
+PygmentsCodeFences = true
+PygmentsCodeFencesGuessSyntax = true
+PygmentsStyle = "monokai"
+enableGitInfo = false
 
 [params]
-title = "I'm Aditya Agrawal"
-author = "crossphoton"
-#copyright = "2020-2021"
-description = "Call me ADI"
-profilePicture = "/images/pic.jpg"
-keywords = ""
-displayMode = "light"
-fullPostContent = true
-gtagId = "G-XPQF8X0C5Z"
+address = "Jaipur, RJ"
+email = "adiag1200+website@gmail.com"
+favicon = "https://crossphoton.tech/pic.webp"
+firstName = "Aditya"
+lastName = "Agrawal"
+profileImage = "img/pic.webp"
+showEducation = true
+showQr = true
+showSkills = true
+showExperience = false
+showOpenSource = false
+showProjects = false
+showPublications = false
 
+[params.google]
 
+[params.google.analytics]
+trackerID = "G-XPQF8X0C5Z"
 
-## Social links
-# use 'fab' when brand icons, use 'fas' when standard solid icons.
-[[params.socialIcons]]
-icon = "fab fa-linkedin"
-title = "Linkedin"
-url = "https://www.linkedin.com/in/crossphoton"
+[[params.handles]]
+link = "https://www.linkedin.com/in/crossphoton/"
+name = "LinkedIn"
 
-[[params.socialIcons]]
-icon = "fab fa-github"
-title = "GitHub"
-url = "https://github.com/crossphoton/"
+[[params.handles]]
+link = "https://github.com/crossphoton/"
+name = "GitHub"
 
-[[params.socialIcons]]
-icon = "fab fa-instagram"
-title = "instagram"
-url = "https://www.instagram.com/crossphoton"
+[[params.handles]]
+link = "https://twitter.com/crossphoton/"
+name = "Twitter"
 
-[[params.socialIcons]]
-icon = "fas fa-envelope"
-title = "e-mail"
-url = "mailto:aditya@crossphoton.tech"
+[[params.handles]]
+link = "https://crossphoton.medium.com"
+name = "Medium"
 
-[[params.socialIcons]]
-icon = "fab fa-twitter"
-title = "twitter"
-url = "https://www.twitter.com/grownupadi"
+[[params.handles]]
+link = "https://crossphoton.tech/cnd/CV.pdf"
+name = "Resume"
+icon = "creative-commons-share"
 
+[outputs]
+home = ["HTML", "JSON"]
 
-[menu]
-
-  [[menu.main]]
-  name = "Home"
-  identifier = "home"
-  weight = 100
-  url = "/"
-
-  [[menu.main]]
-  name = "Blog"
-  weight = 200
-  identifier = "blog"
-  url = "/blog/"
-
-  [[menu.main]]
-  name = "About"
-  weight = 300
-  identifier = "about"
-  url = "/about/"
-
-  [[menu.main]]
-  name = "Contact"
-  weight = 300
-  identifier = "contact"
-  url = "/contact/"
+[taxonomies]
+tag = "tags"
