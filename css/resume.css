@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', serif;
+  font-family: "Open Sans", serif;
   padding-top: 54px;
   color: #868e96;
 }
@@ -17,13 +17,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: "Saira Extra Condensed", serif;
   font-weight: 700;
   color: #343a40;
 }
 
-
-h1, h2{
+h1,
+h2 {
   text-transform: uppercase;
 }
 
@@ -39,7 +39,7 @@ h2 {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: "Saira Extra Condensed", serif;
   font-size: 1.35rem;
 }
 
@@ -48,7 +48,7 @@ h2 {
 }
 
 .list-social-icons a:hover {
-  color: #BD5D38;
+  color: #3038a3;
 }
 
 .list-social-icons a .fa-lg {
@@ -60,7 +60,7 @@ h2 {
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #3038a3;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -135,21 +135,23 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #3038a3 !important;
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: #3038a3 !important;
 }
 
 a {
-  color: #BD5D38;
+  color: #3038a3;
 }
 
-a:hover, a:focus, a:active {
-  color: #824027;
+a:hover,
+a:focus,
+a:active {
+  color: #000672;
 }
 
 img {
-  max-width:80%;
+  max-width: 80%;
 }
