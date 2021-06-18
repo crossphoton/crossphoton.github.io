@@ -11,7 +11,7 @@
 backend:
   name: github
   repo: crossphoton/crossphoton.github.io
-  branch: master
+  branch: main
 
 media_folder: "static/img" # Folder where user uploaded files should go
 public_folder: "img"
@@ -197,7 +197,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - name: "general"
         label: "Site Settings"
-        file: "config.toml"
+        file: "/config.toml"
         extension: toml
         description: "General Site Settings"
         fields:
