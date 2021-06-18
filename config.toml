@@ -50,7 +50,7 @@ icon = "creative-commons-share"
 trackerID = "G-XPQF8X0C5Z"
 
 [outputs]
-home = ["HTML", "JSON", "XML"]
+home = ["HTML", "JSON"]
 
 [taxonomies]
 tag = "tags"
