@@ -40,7 +40,7 @@ link = "https://crossphoton.medium.com"
 name = "Medium"
 
 [[params.handles]]
-link = "https://crossphoton.tech/cnd/CV.pdf"
+link = "https://crossphoton.tech/cdn/CV.pdf"
 name = "Resume"
 icon = "creative-commons-share"
 
