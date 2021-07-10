@@ -20,7 +20,7 @@ address = "Jaipur, RJ"
 showProjects = false
 firstName = "Aditya"
 email = "adiag1200+website@gmail.com"
-showQr = true
+showQr = false
 showSkills = true
 
 [[params.handles]]
