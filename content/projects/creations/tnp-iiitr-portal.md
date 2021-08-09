@@ -1,7 +1,7 @@
 ---
 title: TNP IIITR Portal
 date: 2021-08-09T06:07:02.625Z
-featured: false
+featured: true
 link: https://gitlab.com/crossphoton/tnp-portal
 image: img/web-capture_9-8-2021_114327_tnp-portal-frontend.vercel.app.jpeg
 description: This portal is for both companies and students to ease the recruitment process.
