@@ -1,4 +1,4 @@
-# Aditya Agrawal (crossphoton)
+# Aditya Agrawal (@crossphoton)
 
 ## Social Media
 
@@ -10,11 +10,11 @@
 
 ## Projects
 
-Can be found pinned on [Github Account (crossphoton)](https://github.com/crossphoton).
+- Can be found pinned on [Github Account (@crossphoton)](https://github.com/crossphoton).
 
 ### Others
 
-- [TNP Portal](http://tnp-portal-frontend.vercel.app) ([Gitlab](https://gitlab.com/crossphoton/tnp-portal))
+- [TNP Portal](http://tnp-portal-frontend.vercel.app) (Source code: [Gitlab](https://gitlab.com/crossphoton/tnp-portal))
 
 
 ## Contact
