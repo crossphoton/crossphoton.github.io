@@ -18,6 +18,4 @@ Can be found pinned on [Github Account (crossphoton)](https://github.com/crossph
 
 
 ## Contact
-- Email: adiag1200+web_md@gmail.com
-
-
+- Email: [adiag1200+web_md@gmail.com](mailto:adiag1200+web_md@gmail.com)
