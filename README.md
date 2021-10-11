@@ -3,7 +3,7 @@
 ## Social Media
 
 - [Github](https://github.com/crossphoton)
-- [Twitter](https://twitter.com/grownupadi)
+- [Twitter](https://twitter.com/cross_photon)
 - [Linkedin](https://linkedin.com/in/crossphoton)
 - [Instagram](https://instagram.com/crossphoton)
 - [Codechef](https://codechef.com/users/cross_photon)
