@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+    const links = [
+        {
+            title: "Creator",
+            link: "https://crossphoton.tech"
+        },
+    ]
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crossphotonHQ</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Shippori Antique', sans-serif;
+        text-align: center;
+        color: #fff;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: #676db4;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link {
+        width: 100%;
+        max-width: 300px;
+        padding: 20px 10px;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        color: black;
+        text-decoration: none;
+    }
+
+    #link-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <main style="width: 100%;">
+        <h1 style="padding: 0 50px;">Links</h1>
+        <div id="link-box">
+            <a href="" class="link"></a>
+        </div>
+    </main>
+</body>
+<script>
+    function link(l) {
+        return `
+            <a href="${l.link}" class="link">${l.title}</a>
+        `
+    }
+    const linkBox = document.getElementById('link-box');
+
+    linkBox.innerHTML = "";
+    links.forEach(l => {
+        linkBox.innerHTML += link(l);
+    })
+
+
+    console.log("done")
+
+</script>
+
+</html>
