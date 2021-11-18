@@ -3,10 +3,10 @@
 
 <script>
     const links = [
-        {
-            title: "Creator",
-            link: "https://crossphoton.tech"
-        },
+//         {
+//             title: "Creator",
+//             link: "https://crossphoton.tech"
+//         },
     ]
 </script>
 
@@ -77,6 +77,9 @@
     links.forEach(l => {
         linkBox.innerHTML += link(l);
     })
+    
+    if(!links.length)
+        linkBox.innerHTML = "<b>Nothing's here for now</b>"
 
 
     console.log("done")
