@@ -5,8 +5,9 @@
 - [Github](https://github.com/crossphoton)
 - [Twitter](https://twitter.com/cross_photon)
 - [Linkedin](https://linkedin.com/in/crossphoton)
-- [Instagram](https://instagram.com/crossphoton)
+- [Leetcode](https://leetcode.com/crossphoton)
 - [Codechef](https://codechef.com/users/cross_photon)
+- [Instagram](https://instagram.com/crossphoton)
 
 ## Other things in this [domain](https://crossphoton.tech)
 
