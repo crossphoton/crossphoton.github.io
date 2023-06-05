@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeling Bored...</title>
+    <link rel="shortcut icon" href="joke.ico" type="image/x-icon">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0px;
+        font-family: 'Geologica', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(88, 88, 197);
+    }
+
+    #joke {
+        color: white;
+        padding: 20px;
+        font-size: xx-large;
+        max-width: 1000px;
+    }
+</style>
+
+<body>
+    <div id="joke">Loading...</div>
+</body>
+<script>
+    function load_joke() {
+        return fetch("https://v2.jokeapi.dev/joke/Any").then(res => res.json()).then(res => (res.setup ? res.setup + "<br><br><b>" : "<b>") + (res.joke || res.delivery)+"</b>")
+    }
+
+    async function render_joke() {
+        document.getElementById("joke").innerHTML = await load_joke();
+    }
+
+    render_joke();
+
+
+</script>
+
+</html>
