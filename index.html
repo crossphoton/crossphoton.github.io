@@ -1,113 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aditya Agrawal | crossphoton</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"
-      integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.css"
-      integrity="sha512-zDKgq9gDZL1N3buxzFPZjHwqDOFsgTyhR0aJtXLFTIjEFovumXMaVeF6iBUZ/Rc4Mb0IqRrhqAY+RY7OCUBo6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://kit.fontawesome.com/d381e780f5.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap");
-    * {
-      font-family: "BIZ UDPGothic", sans-serif;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    .section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .black {
-      background-color: black;
-      color: white;
-    }
-    .black * {
-      color: white;
-    }
-    .icons {
-      display: flex;
-      flex-wrap: wrap;
-      width: 80%;
-      justify-content: center;
-      align-items: center;
-    }
-    .icons * {
-      margin: 20px;
-    }
-  </style>
-  <body>
-    <div id="fullpage">
-      <div class="home section">
-        <h2>crossphoton</h2>
-        <h1>Aditya Agrawal</h1>
-      </div>
-      <div class="projects section black">
-        <h2>projects</h2>
-        <div class="icons fa-2x" id="project-list">
-        </div>
-      </div>
-      <div class="contact section">
-        <h2>contact</h2>
-        <div class="icons fa">
-          <a title="Github Profile" href="https://github.com/crossphoton"
-            ><i class="fa-brands fa-github fa-2x"></i
-          ></a>
-          <a title="Email" href="mailto:adiag1200@gmail.com">
-            <i class="fa-regular fa-envelope fa-shake fa-2x"></i>
-          </a>
-          <!-- <a title="Sponsor" href="https://github.com/sponsors/crossphoton"
-            ><i class="fa-solid fa-sack-dollar fa-flip fa-2x"></i
-          ></a> -->
-        </div>
-        <a href="./joke.html">Feeling bored... →</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a goto page to access content related to crossphoton. This contains projects and links to social media sites for contact.">
+  <title>Aditya Agrawal | crossphoton</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"
+    integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.css"
+    integrity="sha512-zDKgq9gDZL1N3buxzFPZjHwqDOFsgTyhR0aJtXLFTIjEFovumXMaVeF6iBUZ/Rc4Mb0IqRrhqAY+RY7OCUBo6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/d381e780f5.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XPQF8X0C5Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-XPQF8X0C5Z');
+</script>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap");
+
+  * {
+    font-family: "BIZ UDPGothic", sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .black {
+    background-color: black;
+    color: white;
+  }
+
+  .black * {
+    color: white;
+  }
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons * {
+    margin: 20px;
+  }
+
+  .navbar {
+    color: white;
+    position: fixed;
+    display: flex;
+    padding: 20px;
+    width: 80vw;
+    left: 8vw;
+    height: max-content;
+    z-index: 5000;
+    justify-content: space-between;
+    align-items: center;
+  }
+</style>
+
+<body>
+  <div class="navbar">
+    <h1>crossphoton</h1>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#projects"><u>Projects</u></a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div id="fullpage">
+    <div class="home section">
+      <h2>crossphoton</h2>
+      <h1>Aditya Agrawal</h1>
+    </div>
+    <div class="projects section black">
+      <h2>projects</h2>
+      <div class="icons fa-2x" id="project-list">
       </div>
     </div>
-  </body>
-  <script>
-    new fullpage("#fullpage", {
-      licenseKey: "asas",
-      navigation: true,
-      responsiveWidth: 700,
-      anchors: ["home", "projects", "contact"],
-      parallax: true,
-    });
+    <div class="contact section">
+      <h2>contact</h2>
+      <div class="icons fa">
+        <a title="Github Profile" href="https://github.com/crossphoton"><i class="fa-brands fa-github fa-2x"></i></a>
+        <a title="Email" href="mailto:adiag1200@gmail.com">
+          <i class="fa-regular fa-envelope fa-2x"></i>
+        </a>
+        <a title="Instagram" href="https://instagram.com/crossphoton"><i class="fa fa-instagram fa-2x"></i></a>
+        <a title="Blog" href="https://crossphoton.medium.com"><i class="fa fa-rss-square fa-2x"></i></a><a
+          title="Sponsor" href="https://github.com/sponsors/crossphoton"><i
+            class="fa-solid fa-sack-dollar fa-2x"></i></a><a title="Resume"
+          href="https://crossphoton.github.io/cdn/CV.pdf"><i class="fa-solid fa-file-text fa-2x"></i></a>
+      </div>
+      <a href="./joke.html">Feeling bored... →</a>
+    </div>
+  </div>
+</body>
+<script>
+  new fullpage("#fullpage", {
+    licenseKey: "asas",
+    navigation: true,
+    responsiveWidth: 700,
+    anchors: ["home", "projects", "contact"],
+    // parallax: true,
+  });
 
-    const projects = [
-        ["status-cron [new]", "Cron service to build status page.", "https://crossphoton.github.io/status-cron"],
-        ["", "Tool for local file encryption.", "https://github.com/crossphoton/drive-encrypt"],
-        ["", "Tool to update codebase and manage applications through webhooks.", "https://github.com/crossphoton/diploy"],
-        ["", "Portal server to manage placements.", "https://github.com/crossphoton/tnp-portal-server"],
-        ["", "Portal frontend to manage placements.", "https://github.com/crossphoton/tnp-portal-frontend"],
-        ["", "See others' current playing on Spotify.", "https://github.com/crossphoton/spotify-sync"],
-        ["2fA", "TOTP based 2fA client in browser!", "https://extended-2fa.vercel.app/"],
-    ];
-    function func(curr, newEle) {
-        console.log(curr, newEle);
-        curr += `<a href="${newEle[2]}" title="${newEle[1]}">${newEle[0] || newEle[2].split("/").at(-1)}</a>`
-        return curr;
-    }
-    document.getElementById('project-list').innerHTML = projects.reduce(func, "");
-  </script>
+  const projects = [
+    ["status-cron [new]", "Cron service to build status page.", "https://crossphoton.github.io/status-cron"],
+    ["", "Tool for local file encryption.", "https://github.com/crossphoton/drive-encrypt"],
+    ["", "Tool to update codebase and manage applications through webhooks.", "https://github.com/crossphoton/diploy"],
+    ["", "Portal server to manage placements.", "https://github.com/crossphoton/tnp-portal-server"],
+    ["", "Portal frontend to manage placements.", "https://github.com/crossphoton/tnp-portal-frontend"],
+    ["", "See others' current playing on Spotify.", "https://github.com/crossphoton/spotify-sync"],
+    ["2fA", "TOTP based 2fA client in browser!", "https://extended-2fa.vercel.app/"],
+  ];
+  function func(curr, newEle) {
+    curr += `<a href="${newEle[2]}" title="${newEle[1]}">${newEle[0] || newEle[2].split("/").at(-1)}</a>`
+    return curr;
+  }
+  document.getElementById('project-list').innerHTML = projects.reduce(func, "");
+
+  window.onload = ((e) => {
+    let a = document.getElementsByClassName('fp-watermark');
+    for (let myChildNode of a) myChildNode.parentNode.removeChild(myChildNode);
+  })
+</script>
+
 </html>
