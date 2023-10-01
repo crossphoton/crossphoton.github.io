@@ -8,12 +8,8 @@
   <meta name="description" content="This is a goto page to access content related to crossphoton. This contains projects and links to social media sites for contact.">
   <title>Aditya Agrawal | crossphoton</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"
-    integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.css"
-    integrity="sha512-zDKgq9gDZL1N3buxzFPZjHwqDOFsgTyhR0aJtXLFTIjEFovumXMaVeF6iBUZ/Rc4Mb0IqRrhqAY+RY7OCUBo6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/pageable@latest/dist/pageable.min.css"/>
   <script src="https://kit.fontawesome.com/d381e780f5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -37,6 +33,7 @@
   a {
     text-decoration: none;
     color: inherit;
+    font-size: large;
   }
 
   .section {
@@ -79,6 +76,13 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .project-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
 </style>
 
 <body>
@@ -91,16 +95,15 @@
     </div>
   </div>
   <div id="fullpage">
-    <div class="home section">
+    <div data-anchor="home" class="home section">
       <h2>crossphoton</h2>
       <h1>Aditya Agrawal</h1>
     </div>
-    <div class="projects section black">
+    <div data-anchor="projects" class="projects section black">
       <h2>projects</h2>
-      <div class="icons fa-2x" id="project-list">
-      </div>
+      <div></div>
     </div>
-    <div class="contact section">
+    <div data-anchor="contact" class="contact section">
       <h2>contact</h2>
       <div class="icons fa">
         <a title="Github Profile" href="https://github.com/crossphoton"><i class="fa-brands fa-github fa-2x"></i></a>
@@ -118,28 +121,34 @@
   </div>
 </body>
 <script>
-  new fullpage("#fullpage", {
-    licenseKey: "asas",
-    navigation: true,
-    responsiveWidth: 700,
-    anchors: ["home", "projects", "contact"],
-    // parallax: true,
-  });
+  new Pageable("#fullpage");
 
-  const projects = [
-    ["status-cron [new]", "Cron service to build status page.", "https://crossphoton.github.io/status-cron"],
-    ["", "Tool for local file encryption.", "https://github.com/crossphoton/drive-encrypt"],
-    ["", "Tool to update codebase and manage applications through webhooks.", "https://github.com/crossphoton/diploy"],
-    ["", "Portal server to manage placements.", "https://github.com/crossphoton/tnp-portal-server"],
-    ["", "Portal frontend to manage placements.", "https://github.com/crossphoton/tnp-portal-frontend"],
-    ["", "See others' current playing on Spotify.", "https://github.com/crossphoton/spotify-sync"],
-    ["2fA", "TOTP based 2fA client in browser!", "https://extended-2fa.vercel.app/"],
-  ];
-  function func(curr, newEle) {
+  const projects = {
+    "development": [
+      ["status-cron [new]", "Cron service to build status page.", "https://crossphoton.github.io/status-cron"],
+      ["", "Tool for local file encryption.", "https://github.com/crossphoton/drive-encrypt"],
+      ["", "Tool to update codebase and manage applications through webhooks.", "https://github.com/crossphoton/diploy"],
+      ["", "Portal server to manage placements.", "https://github.com/crossphoton/tnp-portal-server"],
+      ["", "Portal frontend to manage placements.", "https://github.com/crossphoton/tnp-portal-frontend"],
+      ["", "See others' current playing on Spotify.", "https://github.com/crossphoton/spotify-sync"],
+      ["2fA", "TOTP based 2fA client in browser!", "https://extended-2fa.vercel.app/"],
+    ],
+    "research": [
+      ["contrast-stretching-GPU", "Multiple Implementations of Contrast Stretching on GPU", "https://github.com/crossphoton/contrast-stretching-GPU"],
+      ["DF-GAN", "Deep Fusion Generative Adversarial Networks for Text-to-Image Synthesis", "https://github.com/crossphoton/DF-GAN"],
+      ["work-stealing-dequeues", "Pull based workload balancing", "https://github.com/crossphoton/work-stealing-dequeues"],
+    ]
+};
+  function populateProjects(curr, newEle) {
     curr += `<a href="${newEle[2]}" title="${newEle[1]}">${newEle[0] || newEle[2].split("/").at(-1)}</a>`
     return curr;
   }
-  document.getElementById('project-list').innerHTML = projects.reduce(func, "");
+  function projectCategory(curr, newEle) {
+    console.log(newEle);
+    curr += `<div class="icons project-category fa-2x"><h6>${newEle}</h6><div>${projects[newEle].reduce(populateProjects, "")}</div></div>`
+    return curr;
+  }
+  document.getElementById('projects').innerHTML = Object.keys(projects).reduce(projectCategory, "");
 
   window.onload = ((e) => {
     let a = document.getElementsByClassName('fp-watermark');
